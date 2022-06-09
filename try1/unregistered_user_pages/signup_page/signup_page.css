@@ -1,0 +1,167 @@
+*{box-sizing: border-box;}
+
+/* start of settings for the navigation bar */
+.nav_bar{
+  /* flex properties */
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  width: 100%;
+}
+
+.nav_bar .grid1{
+  display: flex;
+  flex-grow: 1;
+}
+.nav_bar .grid2{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.nav_bar .grid3{
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+/* setting appearance of menu buttons */
+.nav_item{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 18px;
+}
+
+
+
+.nav_item:hover{ color: black; background-color: white; }
+#logo:hover{color: white; background-color: black;}
+
+/* end of setting appearance of menu buttons */
+
+/* setting properties of the dropdown menu in the bottom_nav_bar */
+.dropdown_container {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_contents {
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: darkslategrey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_contents a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_contents a:hover {background-color: gainsboro;   color: black; }
+
+.dropdown_container:hover .dropdown_contents {display: block;}
+
+
+/* end of setting properties of the dropdown menu in the bottom_nav_bar */
+
+
+/* end of settings for the navigation bar */
+
+/* beginning of content container */
+
+.form_container{
+  display: flex;
+  justify-content: center;
+  background-color: black;
+  height: 100vh;
+
+  /* feature to fit the background image*/
+   background-image: url('./images/dawn.png');
+   background-attachment: fixed;  /*to make scrolling possible without affecting the background image */
+   background-repeat: no-repeat;  /*if the inage is small it doesnt repeat */
+   background-size: cover;
+}
+
+.signup_form{
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 50%;
+}
+
+
+.signup_form .form_name{      display: flex;  justify-content: center; color: white;}
+.signup_form .head .msg{       display: flex;  justify-content: center; color: white;}
+.signup_form hr{width: 100%; color: white; }
+label{color: white;}
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  border-radius: 10px;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: whitesmoke;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.submit_button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.submit_button:hover {
+  opacity: 1;
+  background-color: darkgreen;
+}
+
+/* dealing with the footer */
+.form_footer{
+  display: flex;
+  justify-content: center;
+  background-color: #ddd;
+}
+/* end of content container */
+
+#login_msg{
+  color: green;
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+#login_button {
+  text-decoration: none;
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  margin: 8px;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+#login_button:hover {
+  opacity: 1;
+  background-color: white;
+  color: purple;
+}

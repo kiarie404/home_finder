@@ -1,0 +1,215 @@
+
+*{box-sizing: border-box;}
+
+body{
+  /* feature to fit the background image*/
+   background-image: url('../../images/ass8.jfif');
+   background-attachment: fixed;  /*to make scrolling possible without affecting the background image */
+   background-repeat: no-repeat;  /*if the inage is small it doesnt repeat */
+   background-size: cover;
+
+}
+
+/* start of settings for the navigation bar */
+.nav_bar{
+  /* flex properties */
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  top: 0;                 /* is at the top of the page */
+  position: fixed;        /* scrolling does not affect it */
+  width: 100%;            /* covers entire width */
+}
+
+.nav_bar .grid1{
+  display: flex;
+  flex-grow: 1;
+}
+.nav_bar .grid2{
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+}
+.nav_bar .grid3{
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+/* setting appearance of menu buttons */
+.nav_item{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+  padding: 16px;
+}
+
+
+
+.nav_item:hover{ color: black; background-color: white; }
+#logo:hover{color: white; background-color: black;}
+
+/* end of setting appearance of menu buttons */
+
+/* setting properties of the dropdown menu in the bottom_nav_bar */
+.dropdown_container {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_contents {
+  right: 0;
+  display: none;
+  position: absolute;
+  background-color: darkslategrey;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown_contents a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown_contents a:hover {background-color: gainsboro;   color: black; }
+
+.dropdown_container:hover .dropdown_contents {display: block;}
+
+
+/* end of setting properties of the dropdown menu in the bottom_nav_bar */
+
+
+/* end of settings for the navigation bar */
+
+.body_grid > div{ background-color: darkslategrey; }
+.body_grid > div:nth-child(odd){ background-color: darkslategrey;  color: white;}
+
+.body_grid{
+  display: grid;
+  margin-top: 30px;
+  grid-template-rows: minmax(40px, 40px) auto;
+  grid-template-columns: 15fr 70fr 15fr;
+  grid-gap: 16px;
+
+}
+
+/* assignment of banner and scrollable body in accordance to above grid*/
+.banner{
+  grid-area: 1 / 2 / span 1 / span 1 ;
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+  position: sticky;
+}
+
+.scrollable_results { grid-area: 2 / 2 / span 1 / span 1 ; }
+
+
+/* gridding the the scrollable_results now... */
+.scrollable_results{
+  display: grid;
+  grid-template-columns: minmax(1fr, auto);
+  grid-auto-rows: minmax(50px, 300px);
+  grid-gap: 1em;
+}
+/* visually test scrollable gridding */
+.result_item1{background-color: black;}
+.result_item2{background-color: black;}
+
+/* gridding result item */
+.result_item{
+  display: grid;
+  grid-template-columns: 300px 67fr 10fr;
+  grid-auto-rows: auto;
+  grid-gap: 5px;
+}
+/* visually test result item  gridding */
+.result_item > div{background-color: black;}
+.result_item > div:nth-child(odd){background-color: black;}
+
+/* styling the pic part  ie segemnt 1*/
+.segment1{
+  display: grid;
+  grid-template-rows: 300px;
+  grid-template-columns: 300px;
+  grid-gap: 5px;
+  border-radius: 10px;
+}
+
+/* gridding the features segment */
+.features{
+  display: grid;
+  grid-template-rows: 60px 60px 60px;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  grid-gap: 5px;
+  border-radius: 10px;
+}
+
+.features > div {
+  padding: 1em;
+  border-style: double;
+  border-radius: 10px;
+  color: white;
+  background-color: darkslategrey;
+}
+
+/* dealing with segment 3 ie operations */
+.operations{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 30px);
+  grid-gap: 16px;
+  align-items: start;
+  border-radius: 8px;
+}
+
+.operations > a {
+  text-decoration: none;
+  padding: 10px;
+  border-style: double;
+  border-radius: 10px;
+}
+
+.operations > button {
+  text-decoration: none;
+  padding: 16px;
+  border-style: double;
+  border-radius: 10px;
+}
+
+.withhold_button{   // not in use anymore....
+  color: white;
+  background-color: red;
+}
+
+
+.modify_button{
+  color: black;
+  background-color: orange;
+}
+.modify_button:hover{
+  color: black;
+  background-color: darkorange;
+}
+
+.view_button{
+  color: white;
+  background-color: darkgreen;
+}
+
+/* dealing with the images*/
+div > img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 1em;
+}
+
+div > img:hover {
+  opacity: 0.7;
+}

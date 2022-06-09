@@ -1,0 +1,136 @@
+*{ box-sizing: border-box;}
+
+  /* setting the properties of the top navigation bar */
+  .nav_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    top: 0;                 /* is at the top of the page */
+    position: fixed;        /* scrolling does not affect it */
+    width: 100%;            /* covers entire width */
+  }
+
+  /* setting appearance of menu items */
+  .nav_item{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    padding: 20px;
+  }
+
+  .nav_item:hover{ color: black; background-color: white; }
+  #logo_button:hover{  color: white; background-color: black;  }
+
+
+  /* setting properties of the dropdown menu in the bottom_nav_bar */
+  .dropdown_container {
+    /* nothing yet */
+  }
+
+  .dropdown_contents {
+    right: 0;
+    display: none;
+    position: absolute;
+    background-color: darkslategrey;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown_contents a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown_contents a:hover {background-color: gainsboro;   color: black; }
+
+  .dropdown_container:hover .dropdown_contents {display: block;}
+
+  .dropdown_container:hover .nav_item {background-color: white; color: black; }
+  /* end of setting properties of the dropdown menu in the bottom_nav_bar */
+
+
+/* ************* now we deal with the content part ************************************************** */
+/* **************************************************************************************************** */
+.content_container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 30px;
+  height: 100vh;
+  border-radius: 10px;
+
+  /* colors */
+  background-color: ghostwhite;
+
+ /* feature to fit the background image*/
+  background-image: url('./images/j10.jfif');
+  background-attachment: fixed;  /*to make scrolling possible without affecting the background image */
+  background-repeat: no-repeat;  /*if the inage is small it doesnt repeat */
+  background-size: cover;
+}
+
+.banner{
+  display: flex;
+  flex-grow: 1;
+  /* background-color: red; */
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.message{
+  display: flex;
+  font-size: 30px ;
+  color: white;
+}
+
+.search_bar{
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  /* justify-content: center; */
+}
+
+.upper_part{
+  display: flex;
+  justify-content: center;
+}
+
+.upper_part input{
+  height: 50px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.upper_part #search_button{
+  height: 50px;
+  width: 5%;
+  border-radius: 10px;
+  color: white;
+  background-color: purple
+  /* color: white; */
+
+}
+
+.lower_part{
+  display: flex;
+  justify-content: center;
+}
+
+.lower_part div{
+  height: 50px;
+  width: 40%;
+  border-radius: 10px;
+}
+
+.lower_part a{
+  text-decoration: none;
+  background-color: purple;
+  color: white;
+  width: 10%;
+  padding : 8px;
+  border-radius: 10px;
+  /* color: white; */
