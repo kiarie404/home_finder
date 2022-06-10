@@ -1,7 +1,9 @@
 # Summary
 
-# Setting everything up.
-- [Chapter 1](./chapter_1.md)
+- [Introduction](./Introduction.md)
+
+- [Setting things up](./setting_things_up.md)
+
 
 # Capabilities
 
