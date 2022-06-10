@@ -4,10 +4,14 @@
 
 - [Setting things up](./setting_things_up.md)
   - [setup XAMPP or a server software](installing_XAMPP.md)
-  - [setup the database](setting_the_database.md) 
+  - [setup the database](setting_the_database.md)
+  - [upload pages to the server](uploading_pages.md)
 
-# Capabilities
+- [Running the website](./running_the_website.md)  
 
-# Technical explanations
-  # Database
-  # Pages
+
+- [User Guide]()
+
+- [Technical Documentation]()
+  - [code structure]()
+  - [Improvements]()
