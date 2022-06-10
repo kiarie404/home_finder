@@ -76,7 +76,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="setting_things_up.html"><strong aria-hidden="true">2.</strong> Setting things up</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="installing_XAMPP.html"><strong aria-hidden="true">2.1.</strong> step 1 : setup XAMPP or a server software</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Capabilities</li><li class="chapter-item expanded affix "><li class="part-title">Technical explanations</li><li class="chapter-item expanded affix "><li class="part-title">Database</li><li class="chapter-item expanded affix "><li class="part-title">Pages</li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="setting_things_up.html"><strong aria-hidden="true">2.</strong> Setting things up</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="installing_XAMPP.html"><strong aria-hidden="true">2.1.</strong> setup XAMPP or a server software</a></li><li class="chapter-item expanded "><a href="setting_the_database.html"><strong aria-hidden="true">2.2.</strong> setup the database</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Capabilities</li><li class="chapter-item expanded affix "><li class="part-title">Technical explanations</li><li class="chapter-item expanded affix "><li class="part-title">Database</li><li class="chapter-item expanded affix "><li class="part-title">Pages</li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -184,6 +184,75 @@ It will also add its bin to the PATH, no need to worry.</p>
 <li>Check if the XAMPP control panel shows up like the Image below.</li>
 </ol>
 <p><img src="./media/checking_xampp_installation.png" alt="checking XAMPP installation" title="Cheching Xampp instalation in windows" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="setup-the-database"><a class="header" href="#setup-the-database">setup the database</a></h1>
+<p>Now it is time to import the database.
+This is going to be tricky.</p>
+<h2 id="download-the-database-sql-file"><a class="header" href="#download-the-database-sql-file">Download the database .sql file</a></h2>
+<ol>
+<li>
+<p>visit <a href="https://github.com/kiarie404/home_finder" title="where the database.sql is found">this page</a></p>
+</li>
+<li>
+<p>press the button named &quot;code&quot; as seen in the image below :<br />
+Download the zipped code.</p>
+</li>
+</ol>
+<p><img src="./media/download_code.png" alt="Downloading the zipped code" title="Downloading the zipped code" /></p>
+<ol start="3">
+<li>Extract the zipped package. Let us refer to the unzipped package as &quot;unzipped_folder&quot; from here on... cool? --- cool.</li>
+</ol>
+<h2 id="start-the-xampp-server"><a class="header" href="#start-the-xampp-server">Start the Xampp server.</a></h2>
+<ol>
+<li>
+<p>Open up the xampp control panel as shown below:</p>
+<p><img src="./media/checking_xampp_installation.png" alt="opening up xampp" /></p>
+</li>
+<li>
+<p>You will get something like this :</p>
+<p><img src="./media/unstarted_xampp.png" alt="unstarted xampp" /></p>
+<p>Click start on the two circled buttons, that way you make the server to be ready to deal with sql databases.</p>
+</li>
+<li>
+<p>You will get something like this :</p>
+<p><img src="./media/started_xampp.png" alt="started xampp" /></p>
+</li>
+</ol>
+<h2 id="create-dummy-database-that-has-the-same-name-as-the-database-to-be-imported"><a class="header" href="#create-dummy-database-that-has-the-same-name-as-the-database-to-be-imported">Create dummy database that has the same name as the database to be imported</a></h2>
+<ol>
+<li>
+<p>Start up your browser.</p>
+</li>
+<li>
+<p>In the search bar, type and search : &quot;http://localhost/phpmyadmin/&quot;.<br />
+You will get a screen like this :</p>
+<p><img src="./media/phpmyadmin_interface.png" alt="phpmyadmin dashboard" /></p>
+</li>
+<li>
+<p>Press &quot;New&quot; to create a new database, Explicitly name it : &quot;project_x&quot;.<br />
+The naming is VERY IMPORTANT. Name it &quot;project_x&quot;</p>
+<p><img src="./media/create_project_x.png" alt="create_project_x" /></p>
+</li>
+</ol>
+<h2 id="import-the-databasesql-to-xampp-server"><a class="header" href="#import-the-databasesql-to-xampp-server">Import the database.sql to Xampp server</a></h2>
+<ol>
+<li>
+<p>Under the project_x database, click the &quot;import&quot; button.</p>
+</li>
+<li>
+<p>click the &quot;choose file&quot; button.</p>
+</li>
+<li>
+<p>Navigate to the &quot;unzipped file&quot; and choose the database.sql file.</p>
+</li>
+<li>
+<p>Press &quot;Go&quot; at the bottom of the screen</p>
+</li>
+</ol>
+<h2 id="hurray-phew"><a class="header" href="#hurray-phew">Hurray, Phew.</a></h2>
+<p>So I assume you succeeded in importing this whole thing.<br />
+The hard part is done.<br />
+You are now like Thanos ; &quot;<em><strong>It is done</strong></em>.&quot;<br />
+<em><strong>Mama I touched the net.</strong></em></p>
 
                     </main>
 
