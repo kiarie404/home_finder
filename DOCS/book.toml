@@ -4,3 +4,12 @@ language = "en"
 multilingual = false
 src = "src"
 title = "Home finder Documentation"
+
+
+[output.html]
+theme = "my-theme"
+default-theme = "Ayu"
+preferred-dark-theme = "Ayu"
+git-repository-url = "https://github.com/kiarie404/home_finder/tree/main/DOCS"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/kiarie404/home_finder/tree/main/DOCS/{path}"
