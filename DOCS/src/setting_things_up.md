@@ -10,6 +10,4 @@ The user needs to have :
   1. A server : (XAMPP server for Windows/Linux).
   2. A web browser : (All browsers are supported).
 
-### Step by step instructions.
-
-If you already have XAMPP software installed, you can skip step 1 : 
+Next up, we cover the step by step installation guide.... :)

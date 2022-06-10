@@ -3,8 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Home finder Documentation</title>
-        <meta name="robots" content="noindex" />
+        <title>step 1 : setup XAMPP or a server software - Home finder Documentation</title>
         <!-- Custom HTML head -->
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
@@ -76,7 +75,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="setting_things_up.html"><strong aria-hidden="true">2.</strong> Setting things up</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="installing_XAMPP.html"><strong aria-hidden="true">2.1.</strong> step 1 : setup XAMPP or a server software</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Capabilities</li><li class="chapter-item expanded affix "><li class="part-title">Technical explanations</li><li class="chapter-item expanded affix "><li class="part-title">Database</li><li class="chapter-item expanded affix "><li class="part-title">Pages</li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="Introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="setting_things_up.html"><strong aria-hidden="true">2.</strong> Setting things up</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="installing_XAMPP.html" class="active"><strong aria-hidden="true">2.1.</strong> step 1 : setup XAMPP or a server software</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Capabilities</li><li class="chapter-item expanded affix "><li class="part-title">Technical explanations</li><li class="chapter-item expanded affix "><li class="part-title">Database</li><li class="chapter-item expanded affix "><li class="part-title">Pages</li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -114,6 +113,9 @@
                         <a href="https://github.com/kiarie404/home_finder/tree/main/DOCS" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
+                        <a href="https://github.com/kiarie404/home_finder/tree/main/DOCS/src/installing_XAMPP.md" title="Suggest an edit" aria-label="Suggest an edit">
+                            <i id="git-edit-button" class="fa fa-edit"></i>
+                        </a>
                     </div>
                 </div>
 
@@ -138,35 +140,7 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>The Home finder system is a website where :</p>
-<ul>
-<li>users can enter keywords such as location and type of housing in a search bar,<br />
-and in turn they get search results displaying available homes on sale.</li>
-<li>Users can set search filters to customize their search results.</li>
-</ul>
-<p>Administrators on the other hand can ;</p>
-<ul>
-<li>Perform database manipulation. (Add, remove, lookup, modify properties on sale)</li>
-</ul>
-<p>However, this website does not offer :</p>
-<ul>
-<li>Payment services between home buyers and sellers.</li>
-<li>Communication services between buyers and sellers.</li>
-</ul>
-<p>We can just say, this is a home-display application.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="setting-things-up"><a class="header" href="#setting-things-up">Setting things up</a></h1>
-<p>The Home finder is implemented as a &quot;localhost&quot; website. This means that for now, it has not been deployed to an external host.</p>
-<p>The computer on which you will run this application will also act as the server.<br />
-Your computer will be both the server and the client.</p>
-<h3 id="prerequisites"><a class="header" href="#prerequisites">Prerequisites</a></h3>
-<p>The user needs to have :</p>
-<ol>
-<li>A server : (XAMPP server for Windows/Linux).</li>
-<li>A web browser : (All browsers are supported).</li>
-</ol>
-<p>Next up, we cover the step by step installation guide.... :)</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="setup-xampp-or-a-server-software"><a class="header" href="#setup-xampp-or-a-server-software">setup XAMPP or a server software</a></h1>
+                        <h1 id="setup-xampp-or-a-server-software"><a class="header" href="#setup-xampp-or-a-server-software">setup XAMPP or a server software</a></h1>
 <p>The purpose of having the XAMPP software is so that we can get :</p>
 <ul>
 <li>a local server</li>
@@ -189,12 +163,18 @@ It will also add its bin to the PATH, no need to worry.</p>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="setting_things_up.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
                         <div style="clear: both"></div>
                     </nav>
                 </div>
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="setting_things_up.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
             </nav>
 
         </div>
@@ -210,10 +190,5 @@ It will also add its bin to the PATH, no need to worry.</p>
         <script src="book.js" type="text/javascript" charset="utf-8"></script>
 
         <!-- Custom JS scripts -->
-        <script type="text/javascript">
-        window.addEventListener('load', function() {
-            window.setTimeout(window.print, 100);
-        });
-        </script>
     </body>
 </html>
